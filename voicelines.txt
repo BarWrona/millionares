@@ -1,0 +1,61 @@
+-Witaj w grze milionerzy edycja Polsko-Japońskiej Akademii Technik komputerowych w Gdańsku (wersja nieoficjalna)! 
+
+-Nazywam się Michał Hyla i jestem prowadzącym teleturnieju.
+
+-Oto zasady gry
+
+-Od miliona złotych dzieli cię 15 pytań
+	- Są dwa progi gwarantowane na 1000 oraz 40000 złotych.
+	- W każdej chwili możesz użyć jednego z 4 kół ratunkowych
+	    - sonda gdyńska, poproś naszego agenta Tomusia o przeprowadzenie sondy wśród ludzi na ulicach miasta.
+	    - 50/50 czyli, usuń dwie błędne odpowiedzi
+	    - telefon do Dziekana. Możesz zapytać najważniejszą osobę na naszym wydziale, która odpowiedź wydaje mu się poprawna.
+	    - zamiana pytania, tu nie ma większej filozofii
+-Przy każdym pytaniu masz także możliwość się wycofać z kwotą, którą aktualnie masz.
+
+- Nawet student w piątek wieczorem zrozumie te zawiłe zasady. 
+- Czy jesteś gotowy żeby zacząć?
+
+- W takim razie przechodzimy do gry.
+
+
+-Oto pierwsze pytanie za 100zł.
+-Przechodzimy do pytania za 200zł.
+-Czas na pytanie za 500zł.
+
+-Twoja odpowiedź to poprawna odpowiedź!
+-Niestety to nie była poprawna odpowiedź!
+-Wychodzisz z kwotą gwarantowaną!
+
+-To pytanie jest pytaniem o próg gwarantowany za 1000zł.
+-Ta odpowiedź to poprawna odpowiedź! Gratulacje!
+
+-Niestety, to nie jest poprawna odpowiedź!
+
+-Pora na pytanie za 2000zł.
+-Teraz pytanie za 5000zł.
+-Wchodzimy już na kwoty 5-cio cyfrowe, pora na pytanie za 10000zł.
+-To już 6-ste pytanie za 20000zł.
+
+-Teraz robi się na prawdę poważnie, doszliśmy do drugiej kwoty gwarantowanej, czyli pytanie za 40000zł.
+-To... jest poprawna odpowiedź!!! Ta kwota już spokojnie wystarczy na ITN-y.
+-No i niestety to nie była poprawna odpowiedź, wychodzisz z kwotą gwarantowaną 1000zł. Wystarczy ci na jeden ITN i piwo.
+
+-Pytanie za 75000zł.
+-Dopisujemy do kwoty jedno zero. Czeka na ciebie pytanie za 125000zł.
+-Mnożymy kwotę i teraz podejmujesz pytanie za 250000zł.
+-Tylko jedno pytanie dzieli cie od finałowego pytania. Teraz 500000zł.
+-Sky is the limit, ale w naszej grze niebem jest pytanie za 1mln złotych, do którego właśnie doszedłeś.
+
+-Niestety było bardzo blisko, ale tym razem pytanie cię przerosło. Mimo wszystko wychodzisz z kwotą gwarantowaną 40000zł.
+-Nie często się to zdarza, ale właśnie zostałeś milionerem! To jest poprawna odpowiedź!!!
+
+-Czy na pewno chcesz się wycofać i zabrać kwotę, którą aktualnie masz?
+
+-Którego koła ratunkowego chcesz użyć?
+
+-Usuńmy 2 błędne odpowiedzi.
+-Zapytajmy Pana Dziekana, która odpowiedź wydaje mu się właściwa.
+-Prześlijmy to pytanie do Tomusia i zobaczmy rezultat.
+-Na to pytanie nie usłyszymy odpowiedzi, zamieniamy pytanie.
+

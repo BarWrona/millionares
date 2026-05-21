@@ -1,0 +1,39 @@
+#mute-icon {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+#mute-icon:hover {
+    transform: scale(1.1);
+}
+
+.menu-btn {
+    background: linear-gradient(180deg, #022a5a, #011a38);
+    border: 2px solid #bfa34b;
+    padding: 15px 50px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #f5d76e;
+    font-size: 2em;
+    margin: 10px 0;
+    clip-path: polygon(0% 50%, 15% 0%, 85% 0%, 100% 50%, 85% 100%, 15% 100%);
+    text-align: center;
+    transition: background 0.3s, transform 0.3s;
+
+}
+
+.menu-btn:hover {
+    background: linear-gradient(180deg, #033c7a, #022a58);
+    transform: scale(1.05);
+    cursor: url("../content/question_cursor.png"), pointer;
+}
+
+
+#mute-button-container {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 10;
+}
