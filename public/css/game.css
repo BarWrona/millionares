@@ -1,0 +1,342 @@
+@keyframes fade-in-overlay {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: orange;
+    }
+}
+
+@keyframes grow-bar {
+    from {
+        height: 0;
+    }
+    to {
+        height: var(--bar-height);
+    }
+}
+
+.fade-out {
+    animation: fade-out 0.5s forwards;
+}
+
+.fade-in {
+    animation: fade-in 0.5s forwards;
+}
+
+@keyframes fade-out {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 100vh;
+    margin: 0;
+    background-image: url("../content/game_background.png");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#game-board {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    position: relative;
+}
+
+#prize-ladder {
+    width: 20%;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #bfa34b;
+}
+
+#prize-ladder h2 {
+    text-align: center;
+    margin-top: 0;
+}
+
+#prize-list {
+    list-style: none;
+    padding: 0;
+    text-align: right;
+}
+
+#prize-list li {
+    padding: 5px 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+#prize-list li.current-prize {
+    background-color: #bfa34b;
+    color: #011a38;
+    font-weight: bold;
+}
+
+#lifelines-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.lifeline {
+    padding: 10px 15px;
+    border: 2px solid #bfa34b;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.lifeline:hover {
+    background-color: rgba(191, 163, 75, 0.3);
+}
+
+.lifeline.used {
+    background-color: #c0392b;
+    border-color: #a02d22;
+    color: #f2a097;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+#question-container {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #bfa34b;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+#answers-container {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #bfa34b;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.answer-btn {
+    background: linear-gradient(180deg, #022a5a, #011a38);
+    border: 2px solid #bfa34b;
+    padding: 15px 45px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #f5d76e;
+    font-size: 1.2em;
+    clip-path: polygon(0% 50%, 10% 0%, 90% 0%, 100% 50%, 90% 100%, 10% 100%);
+    text-align: left;
+    transition: background 0.3s;
+}
+
+.answer-btn:hover {
+    background: linear-gradient(180deg, #033c7a, #022a58);
+    cursor: url("../content/question_cursor.png"), pointer;
+}
+
+.answer-btn.selected {
+    background: #bfa34b;
+    color: #011a38;
+}
+
+.answer-btn.correct {
+    background: green;
+    color: white;
+}
+
+.answer-btn.incorrect {
+    background: red;
+    color: white;
+}
+
+#resign-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 50;
+}
+
+#resign-btn {
+    font-size: 1.5em;
+    cursor: url("../content/exit.png"), pointer;
+}
+
+#resign-confirm-dialog {
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    background-color: rgba(0, 20, 40, 0.95);
+    border: 2px solid #bfa34b;
+    border-radius: 10px;
+    padding: 20px;
+    z-index: 51;
+    text-align: center;
+}
+
+#resign-confirm-dialog p {
+    margin: 0 0 15px 0;
+    font-size: 1.2em;
+}
+
+#resign-confirm-dialog button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    font-size: 1em;
+}
+
+#game-over-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    color: white;
+    text-align: center;
+    opacity: 0;
+    animation: fade-in-overlay 1s ease-out forwards;
+}
+
+#game-over-overlay h1 {
+    font-size: 3em;
+    margin-bottom: 30px;
+}
+
+#lifeline-display-area {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 200;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    animation: fade-in 0.5s;
+}
+
+#phone-image {
+    width: 400px;
+    height: auto;
+    animation: fade-in-overlay 1s;
+}
+
+#dean-message-box {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: rgba(0, 20, 40, 0.9);
+    border: 2px solid #bfa34b;
+    padding: 25px;
+    border-radius: 10px;
+    font-size: 1.5em;
+    text-align: left;
+    max-width: 80%;
+}
+
+#dean-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid #bfa34b;
+}
+
+#dean-message-text::after {
+    content: '';
+    border-right: 3px solid orange;
+    animation: blink-caret 1s step-end infinite;
+}
+
+#audience-poll-container {
+    text-align: center;
+    background-color: rgba(0, 20, 40, 0.9);
+    border: 2px solid #bfa34b;
+    padding: 25px;
+    border-radius: 10px;
+    width: 60%;
+}
+
+#audience-poll-container p {
+    font-size: 1.3em;
+    margin: 0 0 20px 0;
+}
+
+#chart-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    height: 200px;
+    width: 100%;
+}
+
+.chart-bar-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    color: #f5d76e;
+    height: 100%;
+}
+
+.chart-bar {
+    width: 50px;
+    background-color: #022a5a;
+    border: 2px solid #bfa34b;
+    border-bottom: none;
+    animation: grow-bar 1s ease-out forwards;
+    height: var(--bar-height);
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 5px;
+    box-sizing: border-box;
+    font-weight: bold;
+}
+
+.chart-label {
+    margin-top: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+}

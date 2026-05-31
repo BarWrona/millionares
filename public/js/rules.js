@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function showNextRule() {
         if (currentRuleIndex >= rulesList.length) {
-            window.location.href = 'game_play.html';
+            window.location.href = 'game.html';
             return;
         }
 

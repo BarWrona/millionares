@@ -1,0 +1,1202 @@
+[
+  {
+    "id": 1,
+    "question": "Która planeta jest najbliżej Słońca?",
+    "answers": [
+      "Wenus",
+      "Ziemia",
+      "Merkury",
+      "Mars"
+    ],
+    "correctAnswer": 2,
+    "difficulty": "easy"
+  },
+  {
+    "id": 2,
+    "question": "Stolicą Francji jest:",
+    "answers": [
+      "Rzym",
+      "Madryt",
+      "Paryż",
+      "Berlin"
+    ],
+    "correctAnswer": 2,
+    "difficulty": "easy"
+  },
+  {
+    "id": 3,
+    "question": "Najdłuższa rzeka w Polsce to:",
+    "answers": [
+      "Odra",
+      "Wisła",
+      "Warta",
+      "Bug"
+    ],
+    "correctAnswer": 1,
+    "difficulty": "easy"
+  },
+  {
+    "id": 4,
+    "question": "Ile kontynentów znajduje się na Ziemi?",
+    "answers": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "correctAnswer": 2,
+    "difficulty": "easy"
+  },
+  {
+    "id": 5,
+    "question": "Jak nazywa się samica jelenia?",
+    "answers": [
+      "Łania",
+      "Klępa",
+      "Sarna",
+      "Locha"
+    ],
+    "correctAnswer": 0,
+    "difficulty": "easy"
+  },
+  {
+    "id": 6,
+    "question": "Kto namalował 'Mona Lisę'?",
+    "answers": [
+      "Vincent van Gogh",
+      "Leonardo da Vinci",
+      "Pablo Picasso",
+      "Claude Monet"
+    ],
+    "correctAnswer": 1,
+    "difficulty": "easy"
+  },
+  {
+    "id": 7,
+    "question": "W którym roku wybuchła II wojna światowa?",
+    "answers": [
+      "1938",
+      "1939",
+      "1940",
+      "1941"
+    ],
+    "correctAnswer": 1,
+    "difficulty": "easy"
+  },
+  {
+    "id": 8,
+    "question": "Jakiego koloru jest krew w ludzkich żyłach?",
+    "answers": [
+      "Niebieskiego",
+      "Czerwonego",
+      "Czarnego",
+      "Fioletowego"
+    ],
+    "correctAnswer": 1,
+    "difficulty": "easy"
+  },
+  {
+    "id": 9,
+    "question": "Wzór chemiczny wody to:",
+    "answers": [
+      "CO2",
+      "O2",
+      "H2O",
+      "NaCl"
+    ],
+    "correctAnswer": 2,
+    "difficulty": "easy"
+  },
+  {
+    "id": 10,
+    "question": "Który z tych instrumentów jest instrumentem dętym?",
+    "answers": [
+      "Pianino",
+      "Gitara",
+      "Skrzypce",
+      "Trąbka"
+    ],
+    "correctAnswer": 3,
+    "difficulty": "easy"
+  },
+  {
+    "id": 11,
+    "question": "Z jakiego owocu produkuje się wino?",
+    "answers": [
+      "Z jabłek",
+      "Z winogron",
+      "Z gruszek",
+      "Ze śliwek"
+    ],
+    "correctAnswer": 1,
+    "difficulty": "easy"
+  },
+  {
+    "id": 12,
+    "question": "Ile dni ma rok przestępny?",
+    "answers": [
+      "364",
+      "365",
+      "366",
+      "367"
+    ],
+    "correctAnswer": 2,
+    "difficulty": "easy"
+  },
+  {
+    "id": 13,
+    "question": "Jaki pierwiastek chemiczny ma symbol 'O'?",
+    "answers": [
+      "Ołów",
+      "Tlen",
+      "Osm",
+      "Złoto"
+    ],
+    "correctAnswer": 1,
+    "difficulty": "easy"
+  },
+  {
+    "id": 14,
+    "question": "Gdzie znajduje się Wieża Eiffla?",
+    "answers": [
+      "W Londynie",
+      "W Rzymie",
+      "W Paryżu",
+      "W Nowym Jorku"
+    ],
+    "correctAnswer": 2,
+    "difficulty": "easy"
+  },
+  {
+    "id": 15,
+    "question": "Kto jest autorem trylogii 'Władca Pierścieni'?",
+    "answers": [
+      "J.K. Rowling",
+      "J.R.R. Tolkien",
+      "George R.R. Martin",
+      "C.S. Lewis"
+    ],
+    "correctAnswer": 1,
+    "difficulty": "easy"
+  },
+  {
+    "id": 16,
+    "question": "Które morze oblewa północne granice Polski?",
+    "answers": [
+      "Morze Północne",
+      "Morze Czarne",
+      "Morze Bałtyckie",
+      "Morze Śródziemne"
+    ],
+    "correctAnswer": 2,
+    "difficulty": "easy"
+  },
+  {
+    "id": 17,
+    "question": "Z czego zbudowane są piramidy w Gizie?",
+    "answers": [
+      "Z marmuru",
+      "Z granitu i wapienia",
+      "Z piaskowca",
+      "Z cegieł"
+    ],
+    "correctAnswer": 1,
+    "difficulty": "easy"
+  },
+  {
+    "id": 18,
+    "question": "Które z tych zwierząt jest ssakiem?",
+    "answers": [
+      "Rekin",
+      "Wieloryb",
+      "Krokodyl",
+      "Pingwin"
+    ],
+    "correctAnswer": 1,
+    "difficulty": "easy"
+  },
+  {
+    "id": 19,
+    "question": "Co jest stolicą Włoch?",
+    "answers": [
+      "Wenecja",
+      "Neapol",
+      "Rzym",
+      "Mediolan"
+    ],
+    "correctAnswer": 2,
+    "difficulty": "easy"
+  },
+  {
+    "id": 20,
+    "question": "Jak nazywa się proces, w którym rośliny wytwarzają pokarm?",
+    "answers": [
+      "Oddychanie",
+      "Fotosynteza",
+      "Transpiracja",
+      "Fermentacja"
+    ],
+    "correctAnswer": 1,
+    "difficulty": "easy"
+  },
+  {
+    "id": 21,
+    "question": "Kto był pierwszym królem Polski?",
+    "answers": [
+      "Mieszko I",
+      "Bolesław Chrobry",
+      "Kazimierz Wielki",
+      "Władysław Jagiełło"
+    ],
+    "correctAnswer": 1,
+    "difficulty": "medium"
+  },
+  {
+    "id": 22,
+    "question": "W którym roku miał miejsce Chrzest Polski?",
+    "answers": [
+      "966",
+      "1000",
+      "1410",
+      "992"
+    ],
+    "correctAnswer": 0,
+    "difficulty": "medium"
+  },
+  {
+    "id": 23,
+    "question": "Jaka jest największa pustynia na świecie?",
+    "answers": [
+      "Gobi",
+      "Kalahari",
+      "Sahara",
+      "Antarktyda"
+    ],
+    "correctAnswer": 3,
+    "difficulty": "medium"
+  },
+  {
+    "id": 24,
+    "question": "Jaki jest główny składnik atmosfery ziemskiej?",
+    "answers": [
+      "Tlen",
+      "Azot",
+      "Dwutlenek węgla",
+      "Wodór"
+    ],
+    "correctAnswer": 1,
+    "difficulty": "medium"
+  },
+  {
+    "id": 25,
+    "question": "Który grecki bóg był władcą mórz?",
+    "answers": [
+      "Zeus",
+      "Hades",
+      "Apollo",
+      "Posejdon"
+    ],
+    "correctAnswer": 3,
+    "difficulty": "medium"
+  },
+  {
+    "id": 26,
+    "question": "Jaką walutą płaci się w Japonii?",
+    "answers": [
+      "Won",
+      "Yen",
+      "Yuan",
+      "Dolar"
+    ],
+    "correctAnswer": 1,
+    "difficulty": "medium"
+  },
+  {
+    "id": 27,
+    "question": "Kto napisał 'Pana Tadeusza'?",
+    "answers": [
+      "Juliusz Słowacki",
+      "Adam Mickiewicz",
+      "Henryk Sienkiewicz",
+      "Cyprian Kamil Norwid"
+    ],
+    "correctAnswer": 1,
+    "difficulty": "medium"
+  },
+  {
+    "id": 28,
+    "question": "Z ilu graczy składa się drużyna siatkarska na boisku?",
+    "answers": [
+      "5",
+      "6",
+      "7",
+      "11"
+    ],
+    "correctAnswer": 1,
+    "difficulty": "medium"
+  },
+  {
+    "id": 29,
+    "question": "Który metal jest ciekły w temperaturze pokojowej?",
+    "answers": [
+      "Rtęć",
+      "Cynk",
+      "Ołów",
+      "Srebro"
+    ],
+    "correctAnswer": 0,
+    "difficulty": "medium"
+  },
+  {
+    "id": 30,
+    "question": "Gdzie znajduje się najwyższy szczyt Ziemi, Mount Everest?",
+    "answers": [
+      "W Andach",
+      "W Alpach",
+      "W Himalajach",
+      "W Kaukazie"
+    ],
+    "correctAnswer": 2,
+    "difficulty": "medium"
+  },
+  {
+    "id": 31,
+    "question": "Jak nazywa się nauka o owadach?",
+    "answers": [
+      "Ornitologia",
+      "Entomologia",
+      "Ichtiologia",
+      "Herpetologia"
+    ],
+    "correctAnswer": 1,
+    "difficulty": "medium"
+  },
+  {
+    "id": 32,
+    "question": "Ile kości ma dorosły człowiek?",
+    "answers": [
+      "206",
+      "212",
+      "198",
+      "220"
+    ],
+    "correctAnswer": 0,
+    "difficulty": "medium"
+  },
+  {
+    "id": 33,
+    "question": "Które z państw jest największe pod względem powierzchni?",
+    "answers": [
+      "Chiny",
+      "USA",
+      "Kanada",
+      "Rosja"
+    ],
+    "correctAnswer": 3,
+    "difficulty": "medium"
+  },
+  {
+    "id": 34,
+    "question": "W którym mieście znajduje się słynna Statua Wolności?",
+    "answers": [
+      "Waszyngton",
+      "Nowy Jork",
+      "Boston",
+      "Filadelfia"
+    ],
+    "correctAnswer": 1,
+    "difficulty": "medium"
+  },
+  {
+    "id": 35,
+    "question": "Która krew jest nazywana grupą uniwersalnego dawcy?",
+    "answers": [
+      "A",
+      "B",
+      "AB",
+      "0"
+    ],
+    "correctAnswer": 3,
+    "difficulty": "medium"
+  },
+  {
+    "id": 36,
+    "question": "Ile wynosi liczba Pi z dokładnością do dwóch miejsc po przecinku?",
+    "answers": [
+      "3,12",
+      "3,14",
+      "3,16",
+      "3,18"
+    ],
+    "correctAnswer": 1,
+    "difficulty": "medium"
+  },
+  {
+    "id": 37,
+    "question": "Który malarz odciął sobie ucho?",
+    "answers": [
+      "Pablo Picasso",
+      "Salvador Dali",
+      "Vincent van Gogh",
+      "Edvard Munch"
+    ],
+    "correctAnswer": 2,
+    "difficulty": "medium"
+  },
+  {
+    "id": 38,
+    "question": "Jak nazywał się pierwszy statek kosmiczny, który wylądował na Księżycu?",
+    "answers": [
+      "Apollo 11",
+      "Sputnik 1",
+      "Wostok 1",
+      "Gemini 8"
+    ],
+    "correctAnswer": 0,
+    "difficulty": "medium"
+  },
+  {
+    "id": 39,
+    "question": "W jakich jednostkach mierzona jest siła?",
+    "answers": [
+      "Watach",
+      "Dżulach",
+      "Niutonach",
+      "Paskalach"
+    ],
+    "correctAnswer": 2,
+    "difficulty": "medium"
+  },
+  {
+    "id": 40,
+    "question": "Jaka jest najmniejsza planeta w Układzie Słonecznym?",
+    "answers": [
+      "Mars",
+      "Merkury",
+      "Pluton",
+      "Ziemia"
+    ],
+    "correctAnswer": 1,
+    "difficulty": "medium"
+  },
+  {
+    "id": 41,
+    "question": "Kto skomponował 'Dla Elizy'?",
+    "answers": [
+      "Wolfgang Amadeus Mozart",
+      "Ludwig van Beethoven",
+      "Fryderyk Chopin",
+      "Johann Sebastian Bach"
+    ],
+    "correctAnswer": 1,
+    "difficulty": "medium"
+  },
+  {
+    "id": 42,
+    "question": "Który kraj jest ojczyzną kangurów?",
+    "answers": [
+      "Nowa Zelandia",
+      "RPA",
+      "Australia",
+      "Brazylia"
+    ],
+    "correctAnswer": 2,
+    "difficulty": "medium"
+  },
+  {
+    "id": 43,
+    "question": "Jakiego koloru jest pas środkowy we fladze Francji?",
+    "answers": [
+      "Białego",
+      "Czerwonego",
+      "Niebieskiego",
+      "Żółtego"
+    ],
+    "correctAnswer": 0,
+    "difficulty": "medium"
+  },
+  {
+    "id": 44,
+    "question": "Który kontynent jest najludniejszy?",
+    "answers": [
+      "Afryka",
+      "Ameryka Północna",
+      "Europa",
+      "Azja"
+    ],
+    "correctAnswer": 3,
+    "difficulty": "medium"
+  },
+  {
+    "id": 45,
+    "question": "Z ilu kwadratów składa się standardowa szachownica?",
+    "answers": [
+      "64",
+      "81",
+      "100",
+      "49"
+    ],
+    "correctAnswer": 0,
+    "difficulty": "medium"
+  },
+  {
+    "id": 46,
+    "question": "Jak nazywa się japońska sztuka składania papieru?",
+    "answers": [
+      "Ikebana",
+      "Origami",
+      "Sudoku",
+      "Bonsai"
+    ],
+    "correctAnswer": 1,
+    "difficulty": "medium"
+  },
+  {
+    "id": 47,
+    "question": "W jakiej jednostce mierzy się natężenie prądu elektrycznego?",
+    "answers": [
+      "Wolt",
+      "Om",
+      "Amper",
+      "Farad"
+    ],
+    "correctAnswer": 2,
+    "difficulty": "medium"
+  },
+  {
+    "id": 48,
+    "question": "Co jest głównym składnikiem szkła?",
+    "answers": [
+      "Kreda",
+      "Sól",
+      "Piasek",
+      "Glin"
+    ],
+    "correctAnswer": 2,
+    "difficulty": "medium"
+  },
+  {
+    "id": 49,
+    "question": "Ile strun ma klasyczna gitara?",
+    "answers": [
+      "4",
+      "5",
+      "6",
+      "7"
+    ],
+    "correctAnswer": 2,
+    "difficulty": "medium"
+  },
+  {
+    "id": 50,
+    "question": "Które z państw graniczy z Polską od zachodu?",
+    "answers": [
+      "Słowacja",
+      "Czechy",
+      "Niemcy",
+      "Białoruś"
+    ],
+    "correctAnswer": 2,
+    "difficulty": "medium"
+  },
+  {
+    "id": 51,
+    "question": "W którym wieku miała miejsce rewolucja francuska?",
+    "answers": [
+      "XVII",
+      "XVIII",
+      "XIX",
+      "XX"
+    ],
+    "correctAnswer": 1,
+    "difficulty": "medium"
+  },
+  {
+    "id": 52,
+    "question": "Która z wysp jest największa na świecie?",
+    "answers": [
+      "Madagaskar",
+      "Grenlandia",
+      "Borneo",
+      "Nowa Gwinea"
+    ],
+    "correctAnswer": 1,
+    "difficulty": "medium"
+  },
+  {
+    "id": 53,
+    "question": "Co produkuje trzustka?",
+    "answers": [
+      "Białko",
+      "Insulinę",
+      "Witaminę D",
+      "Kwas żołądkowy"
+    ],
+    "correctAnswer": 1,
+    "difficulty": "medium"
+  },
+  {
+    "id": 54,
+    "question": "W którym oceanie znajduje się Rów Mariański?",
+    "answers": [
+      "Spokojnym",
+      "Atlantyckim",
+      "Indyjskim",
+      "Arktycznym"
+    ],
+    "correctAnswer": 0,
+    "difficulty": "medium"
+  },
+  {
+    "id": 55,
+    "question": "Jaka waluta obowiązuje w Wielkiej Brytanii?",
+    "answers": [
+      "Euro",
+      "Dolar",
+      "Funt szterling",
+      "Frank"
+    ],
+    "correctAnswer": 2,
+    "difficulty": "medium"
+  },
+  {
+    "id": 56,
+    "question": "Który polski pisarz otrzymał Nagrodę Nobla w 1905 roku?",
+    "answers": [
+      "Władysław Reymont",
+      "Henryk Sienkiewicz",
+      "Czesław Miłosz",
+      "Wisława Szymborska"
+    ],
+    "correctAnswer": 1,
+    "difficulty": "medium"
+  },
+  {
+    "id": 57,
+    "question": "Jak nazywa się najwyższa góra w Polsce?",
+    "answers": [
+      "Kasprowy Wierch",
+      "Giewont",
+      "Rysy",
+      "Śnieżka"
+    ],
+    "correctAnswer": 2,
+    "difficulty": "medium"
+  },
+  {
+    "id": 58,
+    "question": "Z jakiego języka wywodzi się słowo 'demokracja'?",
+    "answers": [
+      "Z łaciny",
+      "Z greki",
+      "Z arabskiego",
+      "Z perskiego"
+    ],
+    "correctAnswer": 1,
+    "difficulty": "medium"
+  },
+  {
+    "id": 59,
+    "question": "Która witamina jest produkowana w skórze pod wpływem słońca?",
+    "answers": [
+      "A",
+      "B12",
+      "C",
+      "D"
+    ],
+    "correctAnswer": 3,
+    "difficulty": "medium"
+  },
+  {
+    "id": 60,
+    "question": "Jak nazywa się stolica Australii?",
+    "answers": [
+      "Sydney",
+      "Melbourne",
+      "Canberra",
+      "Perth"
+    ],
+    "correctAnswer": 2,
+    "difficulty": "medium"
+  },
+  {
+    "id": 61,
+    "question": "Kto odkrył Amerykę?",
+    "answers": [
+      "Ferdynand Magellan",
+      "Krzysztof Kolumb",
+      "Amerigo Vespucci",
+      "Vasco da Gama"
+    ],
+    "correctAnswer": 1,
+    "difficulty": "medium"
+  },
+  {
+    "id": 62,
+    "question": "W którym roku zatonął Titanic?",
+    "answers": [
+      "1905",
+      "1912",
+      "1915",
+      "1920"
+    ],
+    "correctAnswer": 1,
+    "difficulty": "medium"
+  },
+  {
+    "id": 63,
+    "question": "Jak nazywa się największy ocean na Ziemi?",
+    "answers": [
+      "Ocean Atlantycki",
+      "Ocean Indyjski",
+      "Ocean Spokojny",
+      "Ocean Arktyczny"
+    ],
+    "correctAnswer": 2,
+    "difficulty": "medium"
+  },
+  {
+    "id": 64,
+    "question": "Co oznacza skrót 'HTTP'?",
+    "answers": [
+      "HyperText Transfer Protocol",
+      "High-Level Text Protocol",
+      "Home Tool Transfer Protocol",
+      "Hyper Transfer Text Protocol"
+    ],
+    "correctAnswer": 0,
+    "difficulty": "medium"
+  },
+  {
+    "id": 65,
+    "question": "Jaka jest oficjalna nazwa Polski?",
+    "answers": [
+      "Rzeczpospolita Polska",
+      "Polska Rzeczpospolita",
+      "Republika Polska",
+      "Królestwo Polskie"
+    ],
+    "correctAnswer": 0,
+    "difficulty": "medium"
+  },
+  {
+    "id": 66,
+    "question": "Gdzie odbyły się pierwsze nowożytne igrzyska olimpijskie?",
+    "answers": [
+      "W Paryżu",
+      "W Londynie",
+      "W Atenach",
+      "W Rzymie"
+    ],
+    "correctAnswer": 2,
+    "difficulty": "medium"
+  },
+  {
+    "id": 67,
+    "question": "Jak nazywa się gaz, który rośliny pobierają podczas fotosyntezy?",
+    "answers": [
+      "Tlen",
+      "Dwutlenek węgla",
+      "Azot",
+      "Wodór"
+    ],
+    "correctAnswer": 1,
+    "difficulty": "medium"
+  },
+  {
+    "id": 68,
+    "question": "Ile gwiazdek znajduje się na fladze Unii Europejskiej?",
+    "answers": [
+      "10",
+      "12",
+      "15",
+      "27"
+    ],
+    "correctAnswer": 1,
+    "difficulty": "medium"
+  },
+  {
+    "id": 69,
+    "question": "W którym stanie USA znajduje się Hollywood?",
+    "answers": [
+      "Teksas",
+      "Floryda",
+      "Nowy Jork",
+      "Kalifornia"
+    ],
+    "correctAnswer": 3,
+    "difficulty": "medium"
+  },
+  {
+    "id": 70,
+    "question": "Co bada sejsmologia?",
+    "answers": [
+      "Gwiazdy",
+      "Trzęsienia ziemi",
+      "Oceaniczne prądy",
+      "Pogodę"
+    ],
+    "correctAnswer": 1,
+    "difficulty": "medium"
+  },
+  {
+    "id": 71,
+    "question": "W jakim mieście znajduje się słynny obraz 'Ostatnia Wieczerza'?",
+    "answers": [
+      "We Florencji",
+      "W Rzymie",
+      "W Mediolanie",
+      "W Wenecji"
+    ],
+    "correctAnswer": 2,
+    "difficulty": "hard"
+  },
+  {
+    "id": 72,
+    "question": "Jakie miasto starożytne zostało zniszczone przez wybuch Wezuwiusza w 79 r. n.e.?",
+    "answers": [
+      "Kartagina",
+      "Teby",
+      "Pompeje",
+      "Sparta"
+    ],
+    "correctAnswer": 2,
+    "difficulty": "hard"
+  },
+  {
+    "id": 73,
+    "question": "Kto był twórcą teorii heliocentrycznej?",
+    "answers": [
+      "Galileusz",
+      "Johannes Kepler",
+      "Mikołaj Kopernik",
+      "Isaac Newton"
+    ],
+    "correctAnswer": 2,
+    "difficulty": "hard"
+  },
+  {
+    "id": 74,
+    "question": "Która bitwa jest nazywana 'Cudem nad Wisłą'?",
+    "answers": [
+      "Bitwa pod Grunwaldem",
+      "Bitwa Warszawska",
+      "Bitwa pod Maciejowicami",
+      "Bitwa pod Wiedniem"
+    ],
+    "correctAnswer": 1,
+    "difficulty": "hard"
+  },
+  {
+    "id": 75,
+    "question": "Co jest stolicą Kanady?",
+    "answers": [
+      "Toronto",
+      "Vancouver",
+      "Montreal",
+      "Ottawa"
+    ],
+    "correctAnswer": 3,
+    "difficulty": "hard"
+  },
+  {
+    "id": 76,
+    "question": "Jaki pierwiastek chemiczny ma symbol 'Ag'?",
+    "answers": [
+      "Złoto",
+      "Srebro",
+      "Argon",
+      "Glin"
+    ],
+    "correctAnswer": 1,
+    "difficulty": "hard"
+  },
+  {
+    "id": 77,
+    "question": "Kto wyreżyserował film 'Ojciec chrzestny'?",
+    "answers": [
+      "Steven Spielberg",
+      "Martin Scorsese",
+      "Francis Ford Coppola",
+      "Alfred Hitchcock"
+    ],
+    "correctAnswer": 2,
+    "difficulty": "hard"
+  },
+  {
+    "id": 78,
+    "question": "W jakiej bitwie w 1815 roku Napoleon Bonaparte poniósł ostateczną klęskę?",
+    "answers": [
+      "Pod Austerlitz",
+      "Pod Lipskiem",
+      "Pod Waterloo",
+      "Pod Trafalgarem"
+    ],
+    "correctAnswer": 2,
+    "difficulty": "hard"
+  },
+  {
+    "id": 79,
+    "question": "Jak nazywał się grecki matematyk znany z twierdzenia o trójkątach prostokątnych?",
+    "answers": [
+      "Archimedes",
+      "Pitagoras",
+      "Euklides",
+      "Tales"
+    ],
+    "correctAnswer": 1,
+    "difficulty": "hard"
+  },
+  {
+    "id": 80,
+    "question": "Który z podanych języków nie należy do grupy języków słowiańskich?",
+    "answers": [
+      "Czeski",
+      "Słowacki",
+      "Węgierski",
+      "Polski"
+    ],
+    "correctAnswer": 2,
+    "difficulty": "hard"
+  },
+  {
+    "id": 81,
+    "question": "Jaką nazwę nosi galaktyka, w której znajduje się Układ Słoneczny?",
+    "answers": [
+      "Andromeda",
+      "Droga Mleczna",
+      "Wielki Obłok Magellana",
+      "Galaktyka Trójkąta"
+    ],
+    "correctAnswer": 1,
+    "difficulty": "hard"
+  },
+  {
+    "id": 82,
+    "question": "Który król założył Uniwersytet Jagielloński?",
+    "answers": [
+      "Władysław Łokietek",
+      "Kazimierz Wielki",
+      "Władysław Jagiełło",
+      "Bolesław Śmiały"
+    ],
+    "correctAnswer": 1,
+    "difficulty": "hard"
+  },
+  {
+    "id": 83,
+    "question": "Ile wynosi temperatura wrzenia wody w skali Fahrenheita (na poziomie morza)?",
+    "answers": [
+      "100",
+      "180",
+      "212",
+      "273"
+    ],
+    "correctAnswer": 2,
+    "difficulty": "hard"
+  },
+  {
+    "id": 84,
+    "question": "Kto jest założycielem firmy Microsoft?",
+    "answers": [
+      "Steve Jobs",
+      "Elon Musk",
+      "Bill Gates",
+      "Mark Zuckerberg"
+    ],
+    "correctAnswer": 2,
+    "difficulty": "hard"
+  },
+  {
+    "id": 85,
+    "question": "Jaki jest najdłużej panujący monarcha w historii Wielkiej Brytanii?",
+    "answers": [
+      "Królowa Wiktoria",
+      "Król Jerzy VI",
+      "Królowa Elżbieta II",
+      "Król Henryk VIII"
+    ],
+    "correctAnswer": 2,
+    "difficulty": "hard"
+  },
+  {
+    "id": 86,
+    "question": "Jak brzmi pierwotna, pełna nazwa miasta Los Angeles?",
+    "answers": [
+      "El Pueblo de Nuestra Señora...",
+      "Las Vegas...",
+      "San Francisco...",
+      "Santa Monica..."
+    ],
+    "correctAnswer": 0,
+    "difficulty": "hard"
+  },
+  {
+    "id": 87,
+    "question": "W jakiej epoce literackiej pisał Jan Kochanowski?",
+    "answers": [
+      "Średniowiecze",
+      "Renesans",
+      "Barok",
+      "Oświecenie"
+    ],
+    "correctAnswer": 1,
+    "difficulty": "hard"
+  },
+  {
+    "id": 88,
+    "question": "Co to jest piktogram?",
+    "answers": [
+      "Stara moneta",
+      "Miara wagi",
+      "Znak obrazkowy",
+      "Instrument medyczny"
+    ],
+    "correctAnswer": 2,
+    "difficulty": "hard"
+  },
+  {
+    "id": 89,
+    "question": "W którym roku Polska weszła do Unii Europejskiej?",
+    "answers": [
+      "1999",
+      "2001",
+      "2004",
+      "2007"
+    ],
+    "correctAnswer": 2,
+    "difficulty": "hard"
+  },
+  {
+    "id": 90,
+    "question": "Który z polskich królów nie wywodził się z dynastii Jagiellonów?",
+    "answers": [
+      "Zygmunt Stary",
+      "Zygmunt August",
+      "Jan III Sobieski",
+      "Aleksander Jagiellończyk"
+    ],
+    "correctAnswer": 2,
+    "difficulty": "hard"
+  },
+  {
+    "id": 91,
+    "question": "Jaki jest główny cel protokołu IP (Internet Protocol)?",
+    "answers": [
+      "Formatowanie stron HTML",
+      "Rutowanie i adresowanie pakietów danych",
+      "Szyfrowanie połączeń sieciowych",
+      "Zarządzanie serwerem baz danych"
+    ],
+    "correctAnswer": 1,
+    "difficulty": "hard"
+  },
+  {
+    "id": 92,
+    "question": "Jaki owad przenosi zarodźce malarii?",
+    "answers": [
+      "Mucha tse-tse",
+      "Pchła szczurza",
+      "Komar widliszek",
+      "Kleszcz pospolity"
+    ],
+    "correctAnswer": 2,
+    "difficulty": "hard"
+  },
+  {
+    "id": 93,
+    "question": "Które z tych miast nigdy nie było stolicą Polski?",
+    "answers": [
+      "Gniezno",
+      "Kraków",
+      "Lublin",
+      "Gdańsk"
+    ],
+    "correctAnswer": 3,
+    "difficulty": "hard"
+  },
+  {
+    "id": 94,
+    "question": "Kto był pierwszym sekretarzem KC PZPR w latach 1956–1970?",
+    "answers": [
+      "Bolesław Bierut",
+      "Edward Gierek",
+      "Władysław Gomułka",
+      "Wojciech Jaruzelski"
+    ],
+    "correctAnswer": 2,
+    "difficulty": "hard"
+  },
+  {
+    "id": 95,
+    "question": "Która część mózgu odpowiada za koordynację ruchową?",
+    "answers": [
+      "Móżdżek",
+      "Rdzeń przedłużony",
+      "Podwzgórze",
+      "Przysadka mózgowa"
+    ],
+    "correctAnswer": 0,
+    "difficulty": "hard"
+  },
+  {
+    "id": 96,
+    "question": "Jak nazywa się najmniejsze państwo świata?",
+    "answers": [
+      "Monako",
+      "Nauru",
+      "San Marino",
+      "Watykan"
+    ],
+    "correctAnswer": 3,
+    "difficulty": "hard"
+  },
+  {
+    "id": 97,
+    "question": "W jakiej jednostce wyraża się pracę w fizyce?",
+    "answers": [
+      "Amper",
+      "Dżul",
+      "Om",
+      "Volt"
+    ],
+    "correctAnswer": 1,
+    "difficulty": "hard"
+  },
+  {
+    "id": 98,
+    "question": "Który pierwiastek występuje pod postacią diamentu i grafitu?",
+    "answers": [
+      "Siarka",
+      "Miedź",
+      "Węgiel",
+      "Krzem"
+    ],
+    "correctAnswer": 2,
+    "difficulty": "hard"
+  },
+  {
+    "id": 99,
+    "question": "Jakie państwo miało największe imperium kolonialne w historii?",
+    "answers": [
+      "Francja",
+      "Hiszpania",
+      "Holandia",
+      "Wielka Brytania"
+    ],
+    "correctAnswer": 3,
+    "difficulty": "hard"
+  },
+  {
+    "id": 100,
+    "question": "Kto sformułował prawa dynamiki?",
+    "answers": [
+      "Albert Einstein",
+      "Isaac Newton",
+      "Nikola Tesla",
+      "Max Planck"
+    ],
+    "correctAnswer": 1,
+    "difficulty": "hard"
+  }
+]

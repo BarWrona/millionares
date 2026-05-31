@@ -1,13 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
-    <title>Milionerzy</title>
-    <link rel="stylesheet" href="../public/css/buttons.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milionerzy - Gra</title>
     <link rel="stylesheet" href="../public/css/game.css">
+    <link rel="stylesheet" href="../public/css/buttons.css">
     <link rel="icon" type="image/x-icon" href="../public/content/favicon.ico">
 </head>
 <body>
+    <div id="game-board">
+        <div id="question-container">
+            <p id="question-text">Ładowanie pytania...</p>
+        </div>
 
+        <div id="answers-container">
+            <button class="answer-btn" data-answer="A">A:</button>
+            <button class="answer-btn" data-answer="B">B:</button>
+            <button class="answer-btn" data-answer="C">C:</button>
+            <button class="answer-btn" data-answer="D">D:</button>
+        </div>
+
+        <div id="resign-container">
+            <button id="resign-btn" class="menu-btn">Wycofaj się</button>
+        </div>
+    </div>
+
+    <div id="prize-ladder">
+        <div id="lifelines-container">
+            <div class="lifeline" id="lifeline-fifty-fifty">50/50</div>
+            <div class="lifeline" id="lifeline-phone">Telefon</div>
+            <div class="lifeline" id="lifeline-audience">Sonda</div>
+            <div class="lifeline" id="lifeline-switch">Zamiana</div>
+        </div>
+        <h2>Drabinka wygranych</h2>
+        <ul id="prize-list">
+            <!-- Prizes will be populated by JS -->
+        </ul>
+    </div>
+
+    <script src="../public/js/game.js"></script>
+    <script src="../public/js/muteScript.js"></script>
 </body>
 </html>
