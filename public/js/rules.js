@@ -8,7 +8,9 @@ document.addEventListener('DOMContentLoaded', () => {
         "50/50 czyli, usuń dwie błędne odpowiedzi",
         "telefon do Dziekana. Możesz zapytać najważniejszą osobę na naszym wydziale, która odpowiedź wydaje mu się poprawna.",
         "zamiana pytania, tu nie ma większej filozofii",
-        "Przy każdym pytaniu masz także możliwość się wycofać z kwotą, którą aktualnie masz."
+        "Przy każdym pytaniu masz także możliwość się wycofać z kwotą, którą aktualnie masz.",
+        "Nawet student w piątkowy wieczór zrozumie te proste zasady.",
+        "Czy jesteś gotowy, aby rozpocząć?"
     ];
 
     const rulesTextElement = document.getElementById('rules-text');
@@ -35,7 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
             nextButton.style.display = 'block';
         } else {
 
-            const audio = new Audio(`../public/content/rules/rule${currentRuleIndex}.mp3`);
+            const audio = new Audio(`../public/content/rules/rule${currentRuleIndex}.m4a`);
 
             audio.addEventListener('loadedmetadata', () => {
                 const audioDuration = audio.duration * 1000;
