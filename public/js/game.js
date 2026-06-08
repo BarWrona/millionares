@@ -407,6 +407,18 @@ document.addEventListener('DOMContentLoaded', async () => {
 
                     typewriterEffect(messageText, fullMessage, null);
 
+                    if (window.innerWidth < 1024) {
+                        setTimeout(() => {
+                            const currentMessageBox = document.getElementById('dean-message-box');
+                            if (currentMessageBox) {
+                                displayArea.classList.add('fade-out');
+                                setTimeout(() => {
+                                    clearLifelineDisplays();
+                                }, 500);
+                            }
+                        }, 15000);
+                    }
+
                 }, 2000);
 
             }, 500);
