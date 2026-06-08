@@ -1,7 +1,18 @@
+// inicjalizuje stronę główną po załadowaniu DOM
 document.addEventListener('DOMContentLoaded', () => {
     const musicPlayer = document.getElementById('musicPlayer');
+    musicPlayer.volume = 0.5;
 
-    // --- Overlay Logic ---
+    let isMuted = sessionStorage.getItem('isMuted') === 'true';
+    let greetingAudio = null;
+
+    window.addEventListener('muteChanged', (e) => {
+        isMuted = e.detail.isMuted;
+        if (greetingAudio) {
+            greetingAudio.muted = isMuted;
+        }
+    });
+
     const css = `
         #custom-overlay {
             position: fixed;
@@ -50,12 +61,53 @@ document.addEventListener('DOMContentLoaded', () => {
     overlay.appendChild(button);
     document.body.appendChild(overlay);
 
+    // obsługuje kliknięcie przycisku wejścia do gry
     button.addEventListener('click', () => {
         overlay.remove();
 
-        const isMuted = sessionStorage.getItem('isMuted') === 'true';
         if (musicPlayer && !isMuted) {
+
+            musicPlayer.volume = 0.1;
             musicPlayer.play().catch(error => console.error("Autoplay nadal zablokowany:", error));
         }
+
+
+        greetingAudio = new Audio('../public/content/index/greeting.mp3');
+        greetingAudio.volume = 0.9;
+        greetingAudio.muted = isMuted;
+
+        greetingAudio.play().then(() => {
+
+            greetingAudio.addEventListener('ended', () => {
+                if (musicPlayer) {
+                    fadeVolumeUp(musicPlayer, 0.5, 1000);
+                }
+            });
+        }).catch(error => {
+            console.error("Greeting audio playback blocked or failed:", error);
+
+            if (musicPlayer) {
+                musicPlayer.volume = 0.5;
+            }
+        });
     });
+
+    // stopniowo podgłaśnia dźwięk w określonym czasie
+    function fadeVolumeUp(audioElement, targetVolume, duration) {
+        const startVolume = audioElement.volume;
+        const steps = 20;
+        const stepTime = duration / steps;
+        let currentStep = 0;
+
+        const interval = setInterval(() => {
+            currentStep++;
+            const progress = currentStep / steps;
+            audioElement.volume = startVolume + (targetVolume - startVolume) * progress;
+
+            if (currentStep >= steps) {
+                clearInterval(interval);
+                audioElement.volume = targetVolume;
+            }
+        }, stepTime);
+    }
 });

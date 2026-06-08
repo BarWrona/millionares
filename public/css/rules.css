@@ -5,7 +5,7 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-image: url("../content/game_background.png");
+    background-image: url("../content/game/game_background.png");
     background-size: cover;
     background-position: center;
     color: white;
@@ -33,6 +33,7 @@ body {
     width: 100%;
 }
 
+/* animacja stopniowego pojawiania się kolejnych zasad gry */
 #rules-text li {
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
@@ -41,5 +42,22 @@ body {
 
 #rules-text li.visible {
     opacity: 1;
+}
+
+/* Dostosowanie ekranu zasad dla urządzeń mobilnych */
+@media (max-width: 1023px) {
+    #rules-container {
+        width: 90%;
+        padding: 20px;
+    }
+    
+    #rules-text {
+        font-size: 1.1em;
+    }
+    
+    .menu-btn {
+        font-size: 1.5em;
+        padding: 12px 35px;
+    }
 }
 

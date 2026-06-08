@@ -58,7 +58,7 @@ body {
     align-items: flex-start;
     height: 100vh;
     margin: 0;
-    background-image: url("../content/game_background.png");
+    background-image: url("../content/game/game_background.png");
     background-size: cover;
     background-position: center;
     color: white;
@@ -73,6 +73,9 @@ body {
     justify-content: space-between;
     height: 100%;
     position: relative;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 1.5s ease-in-out;
 }
 
 #prize-ladder {
@@ -81,6 +84,9 @@ body {
     padding: 20px;
     border-radius: 10px;
     border: 2px solid #bfa34b;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 1.5s ease-in-out;
 }
 
 #prize-ladder h2 {
@@ -142,6 +148,7 @@ body {
     font-size: 1.5em;
 }
 
+/* siatka z dwiema kolumnami dla przycisków odpowiedzi */
 #answers-container {
     background-color: rgba(0, 0, 0, 0.7);
     padding: 20px;
@@ -152,6 +159,7 @@ body {
     gap: 20px;
 }
 
+/* przycisk odpowiedzi stylizowany na kształt diamentu (ścięty) */
 .answer-btn {
     background: linear-gradient(180deg, #022a5a, #011a38);
     border: 2px solid #bfa34b;
@@ -283,6 +291,7 @@ body {
     border: 2px solid #bfa34b;
 }
 
+/* efekt migającego kursora maszyny do pisania (telefon do dziekana) */
 #dean-message-text::after {
     content: '';
     border-right: 3px solid orange;
@@ -303,6 +312,7 @@ body {
     margin: 0 0 20px 0;
 }
 
+/* kontener wykresu koła ratunkowego (sonda gdyńska) */
 #chart-container {
     display: flex;
     justify-content: space-around;
@@ -320,6 +330,7 @@ body {
     height: 100%;
 }
 
+/* pojedynczy słupek wykresu sondy o wysokości zdefiniowanej zmienną CSS */
 .chart-bar {
     width: 50px;
     background-color: #022a5a;
@@ -339,4 +350,225 @@ body {
     margin-top: 10px;
     font-size: 1.2em;
     font-weight: bold;
+}
+
+#loading-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    transition: opacity 1s ease-in-out, visibility 1s;
+}
+
+#loading-text {
+    font-size: 2em;
+    color: #f5d76e;
+    margin-bottom: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-family: sans-serif;
+    text-shadow: 0 0 10px rgba(245, 215, 110, 0.5);
+}
+
+/* pasek postępu ładowania gry na ekranie powitalnym */
+#progress-bar-container {
+    width: 60%;
+    max-width: 600px;
+    height: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid #bfa34b;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(191, 163, 75, 0.3);
+}
+
+#progress-bar {
+    width: 0%;
+    height: 100%;
+    background: linear-gradient(90deg, #022a5a, #bfa34b);
+    transition: width 0.1s linear;
+}
+
+#mobile-top-bar {
+    display: none;
+}
+
+/* Dostosowanie ekranu gry dla urządzeń mobilnych */
+@media (max-width: 1023px) {
+    body {
+        flex-direction: column;
+        justify-content: flex-start;
+        height: 100vh;
+        overflow: hidden;
+        padding: 10px;
+        gap: 5px;
+    }
+
+    #game-board {
+        width: 100%;
+        height: auto;
+        flex-grow: 1;
+        justify-content: flex-start;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 1.5s ease-in-out;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #mobile-top-bar {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+    }
+
+    #toggle-ladder-btn {
+        font-size: 1.1rem;
+        padding: 8px 25px;
+        margin: 0;
+        z-index: 100;
+    }
+
+    #question-container {
+        padding: 15px;
+        font-size: 1.2em;
+    }
+
+    #answers-container {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .answer-btn {
+        font-size: 1em;
+        padding: 12px 25px;
+        clip-path: polygon(0% 50%, 5% 0%, 95% 0%, 100% 50%, 95% 100%, 5% 100%);
+    }
+
+    #resign-container {
+        position: static;
+        margin-top: auto;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding-bottom: 5px;
+    }
+
+    #resign-btn {
+        font-size: 1.1em;
+        padding: 8px 25px;
+    }
+
+    #prize-ladder {
+        width: 100%;
+        background: none;
+        border: none;
+        padding: 0;
+        margin-bottom: 10px;
+        order: -1;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 1.5s ease-in-out;
+    }
+
+    #lifelines-container {
+        margin-bottom: 0;
+        gap: 10px;
+    }
+
+    .lifeline {
+        padding: 8px 12px;
+        font-size: 0.9em;
+    }
+
+    #prize-list-modal-wrapper {
+        display: none;
+    }
+
+    #prize-list-modal-wrapper.mobile-visible {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 85%;
+        max-width: 320px;
+        background-color: rgba(0, 10, 25, 0.95);
+        border: 3px solid #bfa34b;
+        border-radius: 10px;
+        padding: 20px;
+        z-index: 1000;
+        box-shadow: 0 0 25px rgba(0, 0, 0, 0.95);
+        animation: fade-in-overlay 0.3s ease-out forwards;
+    }
+
+    #prize-list-modal-wrapper h2 {
+        font-size: 1.4rem;
+        margin-bottom: 15px;
+        text-align: center;
+        color: #f5d76e;
+    }
+
+    #prize-list {
+        font-size: 1em;
+        max-height: 50vh;
+        overflow-y: auto;
+        padding-right: 5px;
+    }
+
+    #prize-list li {
+        padding: 4px 8px;
+    }
+
+    #lifeline-display-area {
+        width: 90%;
+    }
+
+    #phone-image {
+        width: 280px;
+    }
+
+    #dean-message-box {
+        font-size: 1.1em;
+        padding: 15px;
+        max-width: 90%;
+    }
+
+    #dean-avatar {
+        width: 70px;
+        height: 70px;
+    }
+
+    #audience-poll-container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    #audience-poll-container p {
+        font-size: 1.1em;
+        margin-bottom: 15px;
+    }
+
+    #chart-container {
+        height: 150px;
+    }
+
+    .chart-bar {
+        width: 35px;
+        font-size: 0.9em;
+    }
+
+    .chart-label {
+        font-size: 1em;
+    }
 }

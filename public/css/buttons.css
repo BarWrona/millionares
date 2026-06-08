@@ -9,6 +9,7 @@
     transform: scale(1.1);
 }
 
+/* stylizacja przycisku menu z efektem ścięcia narożników (kształt diamentu) */
 .menu-btn {
     background: linear-gradient(180deg, #022a5a, #011a38);
     border: 2px solid #bfa34b;
