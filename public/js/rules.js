@@ -132,7 +132,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function tryPlayBackgroundAudio() {
         backgroundAudio.play().then(() => {
             document.removeEventListener('click', tryPlayBackgroundAudio);
-            nextButton.removeEventListener('click', tryPlayBackgroundAudio);
+            if (nextButton) nextButton.removeEventListener('click', tryPlayBackgroundAudio);
         }).catch(error => {
             console.log("Autoplay blocked background music. Waiting for user interaction...", error);
             document.addEventListener('click', tryPlayBackgroundAudio, { once: true });
@@ -147,25 +147,29 @@ document.addEventListener('DOMContentLoaded', () => {
         introAudio.volume = 1.0;
         introAudio.muted = isMuted;
 
-        nextButton.style.display = 'none';
+        let introProceeded = false;
+        const proceed = () => {
+            if (introProceeded) return;
+            introProceeded = true;
+            showNextRule();
+        };
 
-        introAudio.addEventListener('ended', () => {
-            nextButton.style.display = 'block';
-        });
-
+        introAudio.addEventListener('ended', proceed);
         introAudio.addEventListener('error', (e) => {
             console.error("Failed to play introduction audio:", e);
-            nextButton.style.display = 'block';
+            proceed();
         });
 
-        introAudio.play().then(() => {
-            if (isMuted) {
-                nextButton.style.display = 'block';
-            }
-        }).catch(error => {
-            console.log("Autoplay blocked introduction audio:", error);
-            nextButton.style.display = 'block';
-        });
+        const startIntro = () => {
+            introAudio.play().then(() => {
+                document.removeEventListener('click', startIntro);
+            }).catch(error => {
+                console.log("Autoplay blocked introduction audio, waiting for click:", error);
+            });
+        };
+
+        startIntro();
+        document.addEventListener('click', startIntro);
     }
 
     playIntroduction();
@@ -181,9 +185,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         if (introAudio) {
             introAudio.muted = isMuted;
-            if (isMuted) {
-                nextButton.style.display = 'block';
-            }
         }
     });
 
@@ -199,14 +200,27 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         if (currentRuleIndex >= rulesList.length) {
-            if (backgroundAudio) {
-                backgroundAudio.pause();
+            if (nextButton) {
+                nextButton.textContent = "Rozpocznij grę";
+                nextButton.style.display = 'block';
+                nextButton.onclick = () => {
+                    if (backgroundAudio) {
+                        backgroundAudio.pause();
+                    }
+                    window.location.href = 'game.html';
+                };
+            } else {
+                if (backgroundAudio) {
+                    backgroundAudio.pause();
+                }
+                window.location.href = 'game.html';
             }
-            window.location.href = 'game.html';
             return;
         }
 
-        nextButton.style.display = 'none';
+        if (nextButton) {
+            nextButton.style.display = 'none';
+        }
 
         const ruleItem = document.createElement('li');
         ruleItem.textContent = rulesList[currentRuleIndex];
@@ -218,30 +232,25 @@ document.addEventListener('DOMContentLoaded', () => {
         currentRuleAudio.volume = 1;
         currentRuleAudio.muted = isMuted;
 
-        currentRuleAudio.addEventListener('ended', () => {
-            nextButton.style.display = 'block';
-        });
+        let ruleProceeded = false;
+        const proceed = () => {
+            if (ruleProceeded) return;
+            ruleProceeded = true;
+            showNextRule();
+        };
 
+        currentRuleAudio.addEventListener('ended', proceed);
         currentRuleAudio.addEventListener('error', (e) => {
             console.error(`Could not load audio file: ${currentRuleAudio.src}`, e);
-            nextButton.style.display = 'block';
+            proceed();
         });
 
-        currentRuleAudio.play().then(() => {
-            if (isMuted) {
-                nextButton.style.display = 'block';
-            }
-        }).catch(error => {
+        currentRuleAudio.play().catch(error => {
             console.error("Rule audio playback failed:", error);
-            nextButton.style.display = 'block';
+            // fallback delay of 3 seconds if play fails
+            setTimeout(proceed, 3000);
         });
 
         currentRuleIndex++;
-
-        if (currentRuleIndex === rulesList.length) {
-            nextButton.textContent = "Rozpocznij grę";
-        }
     }
-
-    nextButton.addEventListener('click', showNextRule);
 });
